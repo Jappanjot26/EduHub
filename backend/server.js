@@ -55,7 +55,7 @@ app.post("/login", async (req, res) => {
       return res.status(400).json({ msg: "Invalid credentials" });
     }
 
-    res.json({ token: "eduhub10232@" });
+    res.json({ token: "mongo_db-token" });
   } catch (err) {
     console.error(err.message);
     res.status(500).send("Server error");
